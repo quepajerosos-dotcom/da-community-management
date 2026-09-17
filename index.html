@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DA Community Management</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="nav">
+  <a class="nav-brand" href="#inicio"><img src="assets/logo.svg" alt="DA"/></a>
+  <nav class="nav-links">
+    <a href="#redes">Redes</a>
+    <a href="#piezas">Piezas</a>
+    <a href="#servicios" class="nav-cta">Servicios</a>
+  </nav>
+</header>
+<section class="hero" id="inicio">
+  <div class="hero-orb"></div>
+  <div class="hero-inner">
+    <button class="logo-player" id="logoPlayer" type="button">
+      <img src="assets/logo.svg" alt="DA Community Management"/>
+      <span class="lp-overlay"><span class="lp-icon"></span></span>
+      <span class="lp-meta"><b id="lpState">Play</b><em>DA Community Management</em></span>
+    </button>
+    <p class="hero-kicker">Community Manager · Mendoza</p>
+    <h1>Hago que tu marca<br><span>se vea</span> y se compre.</h1>
+    <p class="hero-lead">Feeds claros. Stories todos los días. Reels que paran el scroll.</p>
+    <div class="hero-actions">
+      <a class="btn btn-lime" href="#redes">Ver redes</a>
+      <a class="btn btn-ghost" href="#servicios">Servicios</a>
+    </div>
+  </div>
+</section>
+<div class="marquee"><div class="marquee-track">
+  <span>REELS</span><span>STORIES</span><span>WHATSAPP</span><span>FEEDS</span><span>TENDENCIAS</span><span>COMUNIDAD</span>
+  <span>REELS</span><span>STORIES</span><span>WHATSAPP</span><span>FEEDS</span><span>TENDENCIAS</span><span>COMUNIDAD</span>
+</div></div>
+<section id="redes">
+  <span class="tag">Cuentas activas</span>
+  <h2>Redes que manejo</h2>
+  <div class="accounts">
+    <article class="account" data-views="2140,1860,2410,3280,2970,4520,2680" data-inter="312,280,355,410,390,620,344">
+      <h3>🇲🇽 Esto es México</h3><p>@estoesmexicopicante</p>
+      <a href="https://www.instagram.com/estoesmexicopicante" target="_blank">Ver Instagram</a>
+      <div class="kpis"><div><b class="kpi-views">—</b><span>Vistas semana</span></div><div><b class="kpi-peak">—</b><span>Pico</span></div><div><b class="kpi-inter">—</b><span>Interacciones</span></div></div>
+      <div class="chart"></div>
+    </article>
+    <article class="account" data-views="980,1120,1340,1210,1680,1540,1090" data-inter="140,155,190,176,230,210,148">
+      <h3>💼 Masoero Asociados</h3><p>@maso.erocontable</p>
+      <a href="https://www.instagram.com/maso.erocontable" target="_blank">Ver Instagram</a>
+      <div class="kpis"><div><b class="kpi-views">—</b><span>Vistas semana</span></div><div><b class="kpi-peak">—</b><span>Pico</span></div><div><b class="kpi-inter">—</b><span>Interacciones</span></div></div>
+      <div class="chart"></div>
+    </article>
+    <article class="account" data-views="760,890,1020,940,1480,1710,1200" data-inter="98,110,140,125,210,245,160">
+      <h3>⚡ Plagio MZA</h3><p>@plagio.mza</p>
+      <a href="https://www.instagram.com/plagio.mza" target="_blank">Ver Instagram</a>
+      <div class="kpis"><div><b class="kpi-views">—</b><span>Vistas semana</span></div><div><b class="kpi-peak">—</b><span>Pico</span></div><div><b class="kpi-inter">—</b><span>Interacciones</span></div></div>
+      <div class="chart"></div>
+    </article>
+    <article class="account" data-views="1540,1480,1720,2100,1980,2640,1810" data-inter="220,205,250,310,290,380,240">
+      <h3>🥗 FreshPoint Deli</h3><p>@freshpointdeli</p>
+      <a href="https://www.instagram.com/freshpointdeli" target="_blank">Ver Instagram</a>
+      <div class="kpis"><div><b class="kpi-views">—</b><span>Vistas semana</span></div><div><b class="kpi-peak">—</b><span>Pico</span></div><div><b class="kpi-inter">—</b><span>Interacciones</span></div></div>
+      <div class="chart"></div>
+    </article>
+  </div>
+</section>
+<section id="piezas">
+  <span class="tag">Contenido</span>
+  <h2>Piezas que paro el scroll</h2>
+  <div class="pieza-grid">
+    <article class="pieza"><span>01</span><h3>Post + precio</h3><p>Qué es, para qué sirve, cómo lo pido.</p></article>
+    <article class="pieza"><span>02</span><h3>Stories diarias</h3><p>La marca presente todos los días.</p></article>
+    <article class="pieza"><span>03</span><h3>Reels 5-10s</h3><p>Texto grande, audio en tendencia.</p></article>
+    <article class="pieza"><span>04</span><h3>Promos</h3><p>Urgencia y CTA a WhatsApp.</p></article>
+  </div>
+</section>
+<section id="servicios" class="servicios">
+  <div class="servicios-box">
+    <span class="tag">Próximo paso</span>
+    <h2>Servicios</h2>
+    <p>Packs y modalidades los definimos en el siguiente paso.</p>
+  </div>
+</section>
+<footer><p>DA Community Management · Mendoza</p></footer>
+<script>
+const days=['LUN','MAR','MIÉ','JUE','VIE','SÁB','DOM'];
+const fmt=n=>n.toLocaleString('es-AR');
+document.querySelectorAll('.account').forEach(card=>{
+  const views=card.dataset.views.split(',').map(Number);
+  const inter=card.dataset.inter.split(',').map(Number);
+  const max=Math.max(...views,1);
+  card.querySelector('.kpi-views').textContent=fmt(views.reduce((a,b)=>a+b,0));
+  card.querySelector('.kpi-peak').textContent=fmt(Math.max(...views));
+  card.querySelector('.kpi-inter').textContent=fmt(inter.reduce((a,b)=>a+b,0));
+  card.querySelector('.chart').innerHTML=views.map((v,i)=>`<div class="bar-col"><span class="bar-val">${fmt(v)}</span><div class="bar" style="height:${Math.max(8,Math.round(v/max*100))}%"></div><span class="bar-day">${days[i]}</span></div>`).join('');
+});
+const p=document.getElementById('logoPlayer'), s=document.getElementById('lpState');
+let on=false;
+p.addEventListener('click',()=>{on=!on;p.classList.toggle('is-on',on);s.textContent=on?'Pausa':'Play';});
+</script>
+</body>
+</html>
